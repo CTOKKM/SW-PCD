@@ -10,6 +10,14 @@ import SwiftUI
 struct RegisterViewController: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
+<<<<<<< HEAD
+=======
+    @State private var email: String = ""
+    @State private var password: String = ""
+    @State private var confirmPassword: String = ""
+    @State private var nickname: String = ""
+    
+>>>>>>> dfcb635 ([feat] 로그인&회원가입&홈화면 작업중)
     var body: some View {
         NavigationView {
             VStack {
@@ -37,16 +45,37 @@ struct RegisterViewController: View {
                 }
                 
                 // Input Views
+<<<<<<< HEAD
                 SetEmailView().padding(.top, 24)
                 SetPasswordView().padding(.top, 28)
                 SetPasswordConfirmView().padding(.top, 28)
                 SetNickNameView().padding(.top, 28)
                 SetJobView().padding(.top, 28)
+=======
+                SetEmailView(email: $email)
+                    .padding(.top, 24)
+                
+                SetPasswordView(password: $password)
+                    .padding(.top, 28)
+                
+                SetPasswordConfirmView(password: $confirmPassword)
+                    .padding(.top, 28)
+                
+                SetNickNameView(nickname: $nickname)
+                    .padding(.top, 28)
+                
+                SetJobView()
+                    .padding(.top, 28)
+>>>>>>> dfcb635 ([feat] 로그인&회원가입&홈화면 작업중)
                 
                 Spacer()
                 
                 NavigationLink(destination: TermsAgreementViewController()) {
+<<<<<<< HEAD
                     NextButtonView()   
+=======
+                    NextButtonView()
+>>>>>>> dfcb635 ([feat] 로그인&회원가입&홈화면 작업중)
                 }
             }
             .padding(.horizontal, 24)
@@ -57,7 +86,11 @@ struct RegisterViewController: View {
 }
 
 struct SetPasswordConfirmView: View {
+<<<<<<< HEAD
     @State private var password: String = ""
+=======
+    @Binding var password: String
+>>>>>>> dfcb635 ([feat] 로그인&회원가입&홈화면 작업중)
     
     var body: some View {
         VStack(spacing: 8) {
@@ -67,7 +100,11 @@ struct SetPasswordConfirmView: View {
                 Spacer()
             }
             
+<<<<<<< HEAD
             TextField("비밀번호를 한 번 더 입력해 주세요", text: $password)
+=======
+            SecureField("비밀번호를 한 번 더 입력해 주세요", text: $password)
+>>>>>>> dfcb635 ([feat] 로그인&회원가입&홈화면 작업중)
                 .padding(.horizontal, Constants.fontSizeXs)
                 .padding(.vertical, Constants.fontSizeS)
                 .frame(height: 44)
@@ -82,7 +119,11 @@ struct SetPasswordConfirmView: View {
 }
 
 struct SetNickNameView: View {
+<<<<<<< HEAD
     @State private var nickname: String = ""
+=======
+    @Binding var nickname: String
+>>>>>>> dfcb635 ([feat] 로그인&회원가입&홈화면 작업중)
     
     var body: some View {
         VStack(spacing: 8) {

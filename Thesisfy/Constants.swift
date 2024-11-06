@@ -16,6 +16,10 @@ struct Constants {
     static let PrimaryColorPrimary500: Color = Color(red: 0.18, green: 0.56, blue: 1)
     static let PrimaryColorPrimary100: Color = Color(red: 0.74, green: 0.86, blue: 1)
     static let GrayColorGray800: Color = Color(red: 0.23, green: 0.23, blue: 0.23)
+<<<<<<< HEAD
+=======
+    static let GrayColorGray50: Color = Color(red: 0.98, green: 0.98, blue: 0.98)
+>>>>>>> dfcb635 ([feat] 로그인&회원가입&홈화면 작업중)
     static let GrayColorGray100: Color = Color(red: 0.95, green: 0.95, blue: 0.95)
 
 
